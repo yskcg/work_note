@@ -35,8 +35,7 @@
 	```location /upgrade {
                 try_files $uri $uri/ =404;
                 root /home/builder;
-        }
-        ```
+        }```
 
 8. 从文件中读取第一行
   ``` sed -n 1p file```
