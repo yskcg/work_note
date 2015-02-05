@@ -4,9 +4,8 @@
 	2. alise 别名访问
 	访问同ip下的其他路径，配置例子如下：
 	
-	配置路径：
-	>```/etc/nginx/sites-available```
-	>
+	配置路径：``/etc/nginx/sites-available``
+	
 	配置方法为：
 	>
   `location /upgrade {
