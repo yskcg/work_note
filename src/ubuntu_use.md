@@ -53,3 +53,6 @@
 >2. 在用户控制文件`/etc/samba/smbuser`添加上用户名：
  >`xxx=xxx`
 
+10. kermit send 调用的是lrzsz 软件包中的lsz ，lsz 需要建立到sz的软链接
+>> ```sudo apt-get install lrzsz```
+
