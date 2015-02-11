@@ -39,4 +39,20 @@
         }`
 
 8. 从文件中读取第一行
-  `` sed -n 1p file``
+ > ` sed -n 1p file`
+9. 添加个人用户到samba 贡献
+>
+>1. 在配置文件`/etc/samba/smb.conf`添加如下内容：
+`[xxx]
+  comment = samba user
+  browseable = yes
+  path = /home/yangshaokun
+  guest ok = no
+  public = no
+  writable = yes `
+>2. 在用户控制文件`/etc/samba/smbuser`添加上用户名：
+ >`xxx=xxx`
+
+10. kermit send 调用的是lrzsz 软件包中的lsz ，lsz 需要建立到sz的软链接
+>> ```sudo apt-get install lrzsz```
+
