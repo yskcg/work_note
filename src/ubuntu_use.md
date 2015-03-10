@@ -56,3 +56,5 @@
 10. kermit send 调用的是lrzsz 软件包中的lsz ，lsz 需要建立到sz的软链接
 >> ```sudo apt-get install lrzsz```
 
+11. git 添加多个密钥
+>> ```ssh-keygen -t rsa -f ~/.ssh/自己命名的文件 -C "email"```
