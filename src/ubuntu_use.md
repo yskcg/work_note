@@ -58,3 +58,19 @@
 
 11. git 添加多个密钥
 >> ```ssh-keygen -t rsa -f ~/.ssh/自己命名的文件 -C "email"```
+
+12.ubuntu install java
+>>
+`sudo cp /home/yourname/Doenloads/jdk-7u21-linux-i586.tar.gz /opt
+cd /opt 
+sudo tar -zxvf jdk-7u21-linux-i586.tar.gz . (解压到/opt目录)```
+>>　设置环境变量
+>>>　　在/etc/profile中添加JDK配置信息：
+sudo gedit /etc/profile
+在最后添加如下内容：# set jdk environment
+export JAVA_HOME=/opt/jdk1.7.0_21
+export JRE_HOME=/opt/jdk1.7.0_21/jre
+export CLASSPATH=.:$CLASSPATH:$JAVA_HOME/lib:$JRE_HOME/lib
+export PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin`
+
+source /etc/profile （让刚刚的配置生效）
